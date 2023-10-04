@@ -5,8 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: "'Poppins', sans-serif"
+      },
+      backgroundColor: {
+        custom: "rgba(5, 0, 29, 0.80)'",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
